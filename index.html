@@ -66,7 +66,23 @@
         <section id="projects" class="py-5">
             <div class="container">
                 <h2 class="section-heading text-primary-custom">Featured Projects</h2>
-                    
+
+                <p> Over the past year at Johns Hopkins University, I’ve been working on a web-based application 
+                    that automatically detects and scores the quality of OCT (optical coherence tomography) images: 
+                    a type of 3D medical scan used to visualize the retina in high detail. The goal is to let 
+                    clinicians or researchers quickly assess whether an image is good enough for diagnosis or further 
+                    analysis, without needing a specialist to review it manually. </p>
+
+                <p> To build this, I trained a machine learning model in Python using the PyTorch library. Because OCT 
+                    images are 3D, I adapted a standard ResNet architecture (normally used for 2D images) to handle 
+                    three-dimensional data. The model was trained on a dataset of OCT scans that were manually graded by 
+                    ophthalmologists and expert researchers. </p>
+
+                <p> After training the model, I wanted to make it easy for others to use without requiring any software 
+                    installation or data uploading. To do this, I built a progressive web app that runs entirely in the 
+                    user’s browser — meaning the scan data never leaves their device, which protects patient privacy. To 
+                    make this possible, I converted the model to run with ONNX Runtime for the web (onnxruntime-web), and 
+                    used WebGPU for fast, in-browser GPU-based inference. </p> 
                 </div>
             </div>
         </section>
