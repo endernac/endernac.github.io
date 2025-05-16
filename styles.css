@@ -1,0 +1,7 @@
+.profile-img {
+    border-radius: 50% !important;
+    width: 200px; /* Optional: Adjust the size */
+    height: 200px; /* Optional: Ensure it's a perfect circle */
+    object-fit: cover; /* Ensures the image scales properly */
+    border: 5px solid rgb(0, 0, 0); /* Adds a black border around the image */
+}
